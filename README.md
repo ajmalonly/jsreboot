@@ -51,10 +51,11 @@ Open index.html in your browser to view and interact with the project.
 Dependencies
 The Weather API project requires an API key from OpenWeatherMap. After obtaining your API key, add it to the script.js file in the Weather API folder.
 
-javascript
-Copy code
-// Replace "YOUR_API_KEY" with your actual API key
+
+Replace "YOUR_API_KEY" with your actual API key
+
 const apiKey = "YOUR_API_KEY";
+
 How to Contribute
 Feel free to fork the repository and create pull requests to improve these projects or add new ones. Contributions are always welcome!
 
