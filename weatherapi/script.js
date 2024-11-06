@@ -9,7 +9,7 @@ const conditions = document.getElementById("conditions");
 const weatherIcon = document.getElementById("weather-icon");
 
 // OpenWeatherMap API Key and base URL
-const apiKey = "60b8e4e7e17b6c1b96964019c68ef6ab";
+const apiKey = "YOUR_API_KEY";
 const baseURL = "https://api.openweathermap.org/data/2.5/weather";
 
 // Function to fetch and display weather data
