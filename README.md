@@ -7,6 +7,8 @@ The repository is organized into the following folders, each containing a standa
 1. Quiz
 2. Calculator
 3. Weather API
+
+   
 Projects Overview
 1. Quiz
 A fun and interactive quiz application! This project tests users on various questions and provides immediate feedback on their answers.
@@ -14,12 +16,14 @@ A fun and interactive quiz application! This project tests users on various ques
 Key Features:
 JavaScript Concepts: DOM manipulation, array iteration, and event listeners.
 Functionality: Users can select answers, receive a score at the end, and reset the quiz to try again.
+
 2. Calculator
 A simple calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 Key Features:
 JavaScript Concepts: Basic math operations, event handling, and updating the DOM.
 Functionality: Supports real-time calculations as users enter numbers and select operations.
+
 3. Weather API
 A weather app that fetches real-time weather data based on the city input provided by the user.
 
