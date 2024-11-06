@@ -33,6 +33,7 @@ Functionality: Displays temperature, weather conditions, and an icon based on th
 API Information:
 API: OpenWeatherMap API
 Customization: Search by city name or ZIP code; includes background changes based on weather conditions.
+
 Getting Started
 To run any of these projects locally:
 
