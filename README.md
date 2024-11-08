@@ -1,30 +1,40 @@
-JS Reboot
+JS Reboot by Ajmal 🧑🏽‍✈️
 Welcome to JS Reboot! This repository contains a collection of JavaScript-based projects designed to help you practice and master essential JavaScript concepts. Each project covers unique JavaScript skills such as DOM manipulation, event handling, API fetching, and more.
 
 Project Structure
 The repository is organized into the following folders, each containing a standalone project:
 
-1. Quiz
-2. Calculator
-3. Weather API
+1. Candy Jar
+2. Quiz
+3. Rock Paper Scissor
+4. Weather API
 
-   
-Projects Overview
-1. Quiz
+Project Descriptions
+Here's a brief overview of each project, including key features and functionality:
+
+1. Candy Jar
+
+A fun and interactive candy jar project that allows users to add and remove candies from the jar.
+
+Key Features:
+JavaScript Concepts: DOM manipulation, event handling, and array methods.
+Functionality: Users can remove candies from the jar and see the total number of candies left.
+
+2. Quiz
 A fun and interactive quiz application! This project tests users on various questions and provides immediate feedback on their answers.
 
 Key Features:
 JavaScript Concepts: DOM manipulation, array iteration, and event listeners.
 Functionality: Users can select answers, receive a score at the end, and reset the quiz to try again.
 
-2. Calculator
-A simple calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+3. Rock Paper Scissors
+A simple Rock Paper Scissors game that allows users to play against the computer.
 
 Key Features:
-JavaScript Concepts: Basic math operations, event handling, and updating the DOM.
-Functionality: Supports real-time calculations as users enter numbers and select operations.
+JavaScript Concepts: Uses event handling, randomization, and conditionals to determine the winner.
+Functionality: Provides an interactive way to play Rock, Paper, Scissors, with the computer randomly selecting its choice. After each round, it displays the result (win, lose, or draw) to the player.
 
-3. Weather API
+4. Weather API
 A weather app that fetches real-time weather data based on the city input provided by the user.
 
 Key Features:
@@ -56,8 +66,4 @@ Replace "YOUR_API_KEY" with your actual API key
 
 const apiKey = "YOUR_API_KEY";
 
-How to Contribute
-Feel free to fork the repository and create pull requests to improve these projects or add new ones. Contributions are always welcome!
-
-License
-This repository is licensed under the MIT License. See LICENSE for more information.
+Created by ajmalonly for LeWagon.

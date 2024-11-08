@@ -15,7 +15,7 @@ const choices = document.querySelectorAll(".choice");
 // Event listeners for each choice button
 choices.forEach(choice => {
   choice.addEventListener("click", () => {
-    const userChoice = choice.getAttribute("data-choice");
+    const userChoice = choice.dataset.choice;
     playRound(userChoice);
   });
 });
@@ -64,7 +64,6 @@ const updateScores = (winner) => {
 
 // Function to display result message
 const displayResult = (winner, userChoice, computerChoice) => {
-  resultElement.classList.remove("shake");  // Remove shake class initially
 
   if (winner === "draw") {
     resultElement.textContent = `It's a draw! Both chose ${userChoice}.`;
@@ -72,7 +71,6 @@ const displayResult = (winner, userChoice, computerChoice) => {
     resultElement.textContent = `You win! ${userChoice} beats ${computerChoice}.`;
   } else {
     resultElement.textContent = `Computer wins! ${computerChoice} beats ${userChoice}.`;
-    resultElement.classList.add("shake");  // Add shake class if user loses
   }
 };
 
