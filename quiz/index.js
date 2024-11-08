@@ -1,5 +1,3 @@
-// JavaScript file (script.js)
-
 // Questions array
 const questions = [
     { question: "What is the capital of France?", choices: ["Berlin", "Madrid", "Paris", "Rome"], answer: "Paris" },
@@ -21,97 +19,44 @@ const questions = [
   let timerInterval;
   
   // Select DOM elements
-  const questionElement = document.getElementById("question");
-  const choicesElement = document.getElementById("choices");
-  const nextButton = document.getElementById("next-button");
-  const scoreElement = document.getElementById("score");
-  const timerElement = document.getElementById("time-left");
-  const correctSound = document.getElementById("correct-sound");
-  const incorrectSound = document.getElementById("incorrect-sound");
+  
   
   // Shuffle questions and answers
   const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
   
   // Display question
   const showQuestion = () => {
-    const currentQuestion = questions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
     
-    // Clear previous choices
-    choicesElement.innerHTML = "";
-  
+    // Clear previous choices  
     // Shuffle and render choices
-    shuffleArray(currentQuestion.choices).forEach(choice => {
-      const li = document.createElement("li");
-      li.textContent = choice;
-      li.addEventListener("click", () => checkAnswer(choice));
-      choicesElement.appendChild(li);
-    });
-  
-    startTimer();
-  };
-  
+    
+  }
   // Start timer
   const startTimer = () => {
-    clearInterval(timerInterval);
-    timeLeft = 10;
-    timerElement.textContent = timeLeft;
-  
-    timerInterval = setInterval(() => {
-      timeLeft--;
-      timerElement.textContent = timeLeft;
-      if (timeLeft <= 0) {
-        clearInterval(timerInterval);
-        incorrectSound.play();
-        nextQuestion();
-      }
-    }, 1000);
+    
   };
   
   // Check answer
   const checkAnswer = (selectedChoice) => {
-    const correctAnswer = questions[currentQuestionIndex].answer;
+    
   
     // Update score and play sound
-    if (selectedChoice === correctAnswer) {
-      score++;
-      correctSound.play();
-    } else {
-      incorrectSound.play();
-    }
-  
-    nextQuestion();
+   
   };
   
   // Move to next question
   const nextQuestion = () => {
-    clearInterval(timerInterval);
-    currentQuestionIndex++;
-  
-    // Show next question or end quiz
-    if (currentQuestionIndex < questions.length) {
-      showQuestion();
-    } else {
-      endQuiz();
-    }
-  
-    scoreElement.textContent = `Score: ${score} / ${questions.length}`;
+    
   };
   
   // End quiz
   const endQuiz = () => {
-    questionElement.textContent = "Quiz Completed!";
-    choicesElement.innerHTML = ""; // Clear choices
-    timerElement.textContent = ""; // Hide timer
-    nextButton.style.display = "none"; // Hide next button
-    scoreElement.textContent = `Final Score: ${score} / ${questions.length}`;
+    
   };
   
   // Start quiz
   const startQuiz = () => {
-    shuffleArray(questions);
-    showQuestion();
-    scoreElement.textContent = `Score: ${score}`;
+    
   };
   
   // Initialize quiz on load
