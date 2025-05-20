@@ -1,5 +1,4 @@
 /* style.css */
-
 body {
     display: flex;
     justify-content: center;
@@ -29,6 +28,10 @@ body {
     color: #333;
     margin-bottom: 20px;
   }
+
+  .purple {
+    background-color: rgb(168, 35, 195) !important;
+  }
   
   .buttons {
     margin-bottom: 20px;
@@ -55,10 +58,44 @@ body {
     height: 1.2rem;
   }
   
+  .jar {
+    width: 200px;
+    height: 515px;
+    background: #e0f7fa;
+    border: 5px solid #00796b;
+    border-radius: 100px 100px 40px 40px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
   #candy-list {
     list-style: none;
     padding: 0;
-    color: #555;
-    font-size: 1rem;
+    margin: 0;
   }
+    
+  #candy-list li {
+    font-size: 2rem;
+    text-align: center;
+    margin: 8px;
+    list-style: none;
+    background: none;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
   

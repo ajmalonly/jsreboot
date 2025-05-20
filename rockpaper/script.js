@@ -1,4 +1,3 @@
-
 // Score variables
 // Select DOM elements
 // Choices for the game
@@ -36,6 +35,7 @@ const updateScores = (winner) => {
 const displayResult = (winner, userChoice, computerChoice) => {
   // Display the result message
 };
+
 
 
 
