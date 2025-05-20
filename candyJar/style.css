@@ -5,7 +5,11 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #fffcfe;
+    background-image: url('https://sweetytreatyco.com/cdn/shop/articles/colorful-candies-mixed-2023-11-27-04-59-29-utc_1_1100x.jpg?v=1714517212');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .container {
