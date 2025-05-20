@@ -1,4 +1,5 @@
 JS Reboot by Ajmal 🧑🏽‍✈️
+
 Welcome to JS Reboot! This repository contains a collection of JavaScript-based projects designed to help you practice and master essential JavaScript concepts. Each project covers unique JavaScript skills such as DOM manipulation, event handling, API fetching, and more.
 
 Project Structure
@@ -55,6 +56,8 @@ To run any of these projects locally:
 
 3. serve
 
+4. Open the folder of the project you would like to code.
+
 
 Open index.html in your browser to view and interact with the project.
 
@@ -62,8 +65,8 @@ Dependencies
 The Weather API project requires an API key from OpenWeatherMap. After obtaining your API key, add it to the script.js file in the Weather API folder.
 
 
-Replace "YOUR_API_KEY" with your actual API key
+Replace "YOURAPIKEY" with your actual API key
 
-const apiKey = "YOUR_API_KEY";
+const apiKey = "YOURAPIKEY";
 
 Created by ajmalonly for LeWagon.
